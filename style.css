@@ -8,7 +8,12 @@ html {
   --green: rgb(36, 155, 76);
   --cream: rgb(242, 243, 207);
   --yellow: rgb(255, 196, 0);
+  --pink: rgb(241, 115, 136);
   scroll-behavior: smooth;
+}
+
+.underline-pink {
+  border-bottom: var(--pink) 5px solid;
 }
 
 /* --- GRID STYLES --- */
@@ -81,7 +86,7 @@ p {
   line-height: 1.5em;
 }
 
-/* MAIN STYLES */
+/* --- MAIN STYLES --- */
 /* Header */
 .logo {
   font-size: 20px;
