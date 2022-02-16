@@ -23,6 +23,11 @@ html {
   place-items: center;
 }
 
+.grid-rows-auto {
+  display: grid;
+  grid-auto-flow: row;
+}
+
 .centered {
   margin: 0 auto;
   width: 550px;
@@ -39,6 +44,12 @@ header {
   height: 100px;
   padding: 20px;
   background-color: var(--green);
+}
+
+.welcome-page,
+.about-me,
+.portfolio {
+  padding: 100px;
 }
 
 h1 {
@@ -82,7 +93,6 @@ header ul {
 
 /* Welcome Page */
 .welcome-page {
-  padding: 100px;
   color: var(--cream);
   background-color: var(--green);
 }
@@ -98,7 +108,6 @@ header ul {
 
 /* About Me */
 .about-me {
-  padding: 100px;
   color: var(--green);
   background-color: var(--cream);
 }
@@ -106,4 +115,23 @@ header ul {
 .introduction-wrapper,
 .technical-skills-wrapper {
   margin: 50px;
+}
+
+/* Portfolio */
+.portfolio {
+  color: var(--green);
+  background-color: var(--yellow);
+}
+
+.project {
+  padding: 20px;
+  margin: 10px;
+  background-color: var(--cream);
+  border: var(--green) 5px solid;
+  border-radius: 20px;
+}
+
+.project button {
+  width: 200px;
+  margin: 20px;
 }
