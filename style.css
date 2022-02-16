@@ -3,59 +3,42 @@
   font-family: sans-serif;
 }
 
-/* COLORS */
+/* --- COLORS --- */
 html {
   --green: rgb(36, 155, 76);
   --cream: rgb(242, 243, 207);
   --yellow: rgb(255, 196, 0);
 }
 
+/* --- GRID STYLES --- */
+.two-columns__expand-two {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.grid-columns-auto {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+}
+
+.centered {
+  margin: 0 auto;
+  width: 550px;
+}
+
+/* --- BASE STYLES --- */
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
 }
 
-/* Header */
 header {
   height: 100px;
   padding: 20px;
-
   background-color: var(--green);
-}
-
-.logo {
-  font-size: 20px;
-  font-weight: 800;
-  color: var(--cream);
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
-}
-
-.nav-button {
-  width: 100px;
-  height: 25px;
-
-  color: var(--green);
-  background-color: var(--cream);
-  border: none;
-  border-radius: 8px;
-
-  font-weight: 800;
-}
-/* Welcome Page */
-.welcome-page {
-  padding: 100px;
-  color: var(--cream);
-  background-color: var(--green);
-}
-.welcome-message-wrapper {
-  width: 500px;
 }
 
 h1 {
@@ -64,8 +47,48 @@ h1 {
   font-size: 80px;
 }
 
-.welcome-page p {
+h2 {
+  text-align: center;
+}
+
+p {
+  margin: 0;
   line-height: 1.5em;
+}
+
+/* MAIN STYLES */
+/* Header */
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--cream);
+}
+
+header ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-button {
+  width: 100px;
+  height: 25px;
+  color: var(--green);
+  background-color: var(--cream);
+  border: none;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+/* Welcome Page */
+.welcome-page {
+  padding: 100px;
+  color: var(--cream);
+  background-color: var(--green);
+}
+
+.welcome-page u {
+  text-decoration-color: var(--yellow);
 }
 
 .welcome-page span {
@@ -73,21 +96,14 @@ h1 {
   font-weight: 800;
 }
 
-/* GRID STYLES */
-.two-columns__expand-two {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-
-  align-items: center;
+/* About Me */
+.about-me {
+  padding: 100px;
+  color: var(--green);
+  background-color: var(--cream);
 }
 
-.grid-columns-auto {
-  display: grid;
-  grid-auto-flow: column;
-
-  place-items: center;
-}
-
-.centered {
-  margin: 0 auto;
+.introduction-wrapper,
+.technical-skills-wrapper {
+  margin: 50px;
 }
