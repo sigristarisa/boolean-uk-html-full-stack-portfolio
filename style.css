@@ -26,6 +26,7 @@ html {
 .grid-rows-auto {
   display: grid;
   grid-auto-flow: row;
+  place-items: center;
 }
 
 .centered {
@@ -133,5 +134,16 @@ header ul {
 
 .project button {
   width: 200px;
+  height: 30px;
+  padding: 5px;
   margin: 20px;
+
+  color: var(--cream);
+  background-color: var(--green);
+  border: none;
+  border-radius: 10px;
+}
+
+.project a {
+  color: var(--green);
 }
