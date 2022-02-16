@@ -143,6 +143,7 @@ header ul {
 
 .project {
   padding: 20px;
+  height: 400px;
   margin: 10px;
   background-color: var(--cream);
   border: var(--green) 5px solid;
