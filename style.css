@@ -7,28 +7,27 @@
 html {
   --green: rgb(36, 155, 76);
   --cream: rgb(242, 243, 207);
-  --yellow: rgb(253, 228, 4);
+  --yellow: rgb(255, 196, 0);
 }
 
-/* BASE STYLES */
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
 }
 
+/* Header */
 header {
   height: 100px;
-  padding: 10px;
+  padding: 20px;
 
-  border: blue 2px solid;
   background-color: var(--green);
 }
 
 .logo {
   font-size: 20px;
   font-weight: 800;
-  color: white;
+  color: var(--cream);
 }
 
 ul {
@@ -42,10 +41,36 @@ ul {
   width: 100px;
   height: 25px;
 
-  color: white;
-  background-color: var(--yellow);
+  color: var(--green);
+  background-color: var(--cream);
   border: none;
   border-radius: 8px;
+
+  font-weight: 800;
+}
+/* Welcome Page */
+.welcome-page {
+  padding: 100px;
+  color: var(--cream);
+  background-color: var(--green);
+}
+.welcome-message-wrapper {
+  width: 500px;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 80px;
+}
+
+.welcome-page p {
+  line-height: 1.5em;
+}
+
+.welcome-page span {
+  color: var(--yellow);
+  font-weight: 800;
 }
 
 /* GRID STYLES */
@@ -61,4 +86,8 @@ ul {
   grid-auto-flow: column;
 
   place-items: center;
+}
+
+.centered {
+  margin: 0 auto;
 }
