@@ -1,3 +1,64 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* COLORS */
+html {
+  --green: rgb(36, 155, 76);
+  --cream: rgb(242, 243, 207);
+  --yellow: rgb(253, 228, 4);
+}
+
+/* BASE STYLES */
 body {
-  background-color: red;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  height: 100px;
+  padding: 10px;
+
+  border: blue 2px solid;
+  background-color: var(--green);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.nav-button {
+  width: 100px;
+  height: 25px;
+
+  color: white;
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 8px;
+}
+
+/* GRID STYLES */
+.two-columns__expand-two {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  align-items: center;
+}
+
+.grid-columns-auto {
+  display: grid;
+  grid-auto-flow: column;
+
+  place-items: center;
 }
