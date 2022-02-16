@@ -8,6 +8,7 @@ html {
   --green: rgb(36, 155, 76);
   --cream: rgb(242, 243, 207);
   --yellow: rgb(255, 196, 0);
+  scroll-behavior: smooth;
 }
 
 /* --- GRID STYLES --- */
