@@ -58,6 +58,10 @@ header {
 #portfolio,
 #experience {
   padding: 100px;
+  height: calc(100vh - 100px);
+
+  display: grid;
+  place-items: center;
 }
 
 footer {
@@ -141,6 +145,9 @@ header ul {
   margin: 50px;
 }
 
+#about-me ul {
+  columns: 2;
+}
 /* Portfolio */
 #portfolio {
   color: var(--green);
